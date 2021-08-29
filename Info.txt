@@ -1,0 +1,20 @@
+Input Data:
+
+Data is obtained from the Entso-e transparency Platform.
+Other data for market coupling such as the shadow atc and the PTDF are obtained from the JAO utlity tool.
+All the data is preprocessed which means the missing values are filled out, converted into hourly resolution and
+a time frame from October 2018 to December 2019 (10968 hours). 
+Apart from this all of data is in UTC format. If it was not available at the source, then it converted into UTC
+before used as an input for the model.
+Fuel costs are obtained from multiple researches. This mainly includes the
+mid-term adequacy forecast 2019 report by entso-e.
+
+Code:
+
+The code has some sections commnented. This includes some approaches or ways to get alternate results.
+Others include additional results. Please look into the formulation of the before uncommenting.
+
+Run:
+
+Both of the code have a very large simulation time. So in order to check the code please change the number of 
+timesteps in the 'network.lopf' line.
